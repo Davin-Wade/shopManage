@@ -18,17 +18,16 @@ public class LoginFilterServlet implements Filter {
         String requestURI = request.getRequestURI();
         resp.setContentType("text/html;charset=utf-8");
 
+        // 以下路径可直接通过
         if("/login.jsp".equals(requestURI) || "/loginServlet".equals(requestURI) || "/register.jsp".equals(requestURI)
                 || "/registerServlet".equals(requestURI) || "/checkCodeServlet".equals(requestURI)){
             chain.doFilter(req, resp);
 
         }else{
             String username = (String)session.getAttribute("username");
-//            String noFreeUsername = (String)session.getAttribute("noFreeUsername");
-            if(username != null && !"".equals(username)){ /*|| noFreeUsername != null && !"".equals(noFreeUsername)*/
+            if(username != null && !"".equals(username)){
                 chain.doFilter(req,resp);
             }else{
-//                response.getWriter().println("<script type='text/javascript'> alert('您尚未登录！');location.href='login.jsp'</script>");
                 response.sendRedirect("login.jsp");
             }
         }
