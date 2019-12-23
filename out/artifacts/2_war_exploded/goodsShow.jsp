@@ -43,6 +43,9 @@
 </style>
 
 <script>
+    /**
+     *  实现全选
+     */
     function checkAllSelect() {
         var checkAll = document.getElementById("checkAll");
         var checkAll2 = document.getElementsByName("checks");
@@ -62,9 +65,6 @@
     function remove() {
         document.getElementById("go").submit();
     }
-
-
-
 </script>
 
 <%
