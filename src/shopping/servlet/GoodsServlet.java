@@ -110,8 +110,9 @@ public class GoodsServlet extends HttpServlet {
         Goods gd = new Goods();
         gd.setName(req.getParameter("nameSearch"));
 
+        // 获取分页信息
         Page pg = new Page();
-        pg.setNowPage(StringUtil.String2int(req.getParameter("page"),0));
+        pg.setNowPage(StringUtil.String2int(req.getParameter("page"),0));// 获取当前分页
 
         GoodsDaoImpl gdDao = new GoodsDaoImpl();
         Page page = gdDao.getPageObject(gd, pg);
@@ -164,29 +165,6 @@ public class GoodsServlet extends HttpServlet {
      * @throws IOException
      */
     private void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-/*        // 创建实例类存储前端数据
-        Goods gd = new Goods();
-        System.out.println(req.getParameter("names"));
-        gd.setName(req.getParameter("names"));
-        gd.setPrice(StringUtil.String2int(req.getParameter("price"), 0));
-        gd.setPic(req.getParameter("pic"));
-        gd.setDesc(req.getParameter("desc"));
-        gd.setStock(StringUtil.String2int(req.getParameter("stock"), 0));
-
-        *//**
-         *  判断空条件
-         *//*
-
-        GoodsDaoImpl stuDao = new GoodsDaoImpl();
-        int b = stuDao.insertGoods(gd);
-
-        // 判断添加是否成功
-        if (b > 0) {
-            resp.getWriter().println("<script type='text/javascript'> alert('添加成功!');location.href='goodsServlet';</script>");
-        } else {
-            resp.getWriter().println("<script type='text/javascript'> alert('添加失败！');location.href='add.jsp';</script>");
-
-        }*/
         String errMsg;
         int row;
         try {

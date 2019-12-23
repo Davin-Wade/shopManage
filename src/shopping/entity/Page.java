@@ -2,6 +2,10 @@ package shopping.entity;
 
 import java.util.List;
 
+/**
+ *  Page类
+ *  存储分页信息
+ */
 public class Page {
     private int nowPage;// 当前页
     private int homePage = 1;// 首页
