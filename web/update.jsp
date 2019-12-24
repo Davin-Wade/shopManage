@@ -32,9 +32,9 @@
 </head>
 <body>
 
-<form action="${pageContext.request.contextPath}/goodsServlet" method="post">
+<form action="${pageContext.request.contextPath}/goodsServlet?opr=update" method="post">
     <script type="application/javascript" src="jsupload/upload.js"></script>
-    <input type="hidden" value="update" name="opr">
+<%--    <input type="hidden" value="update" name="opr">--%>
     <table border="1" align="center" width="90%" cellpadding="5" cellspacing="0">
 
         <tr>
