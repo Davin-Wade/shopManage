@@ -13,12 +13,10 @@
     <style>
         .box {
             width: 35%;
-            height: 55%;
+            height:55%;
             margin: 120px auto;
-            /*border: 1px solid;*/
-            border-radius: 3px;
-            background: -webkit-linear-gradient(top, #d3d3d3, #eaeaea, #D3D3D3);
-            box-shadow: 3px 3px 4px #b9b9b9;
+            border-radius:3px;
+            box-shadow:0px 0px 10px #cecece;
         }
 
         .inbox {
@@ -46,25 +44,27 @@
             height: 35px;
         }
 
-        #register {
-            text-align: right;
-            float: right;
-            font-size: 18px;
-            padding-top: 30px;
-            padding-right: 10px;
+        #register a:hover{
+            text-align: center;
+            font-size: 40px;
+            color: #fe9c4d;
         }
 
-        .text {
+        #register a{
+            color: grey;
+        }
+
+        .text{
             height: 28px;
         }
 
     </style>
 
 </head>
-<body>
+<body style="background-color: #f3f2ef">
+<div class="box" style="background-color: #ffffff">
 <form action="${pageContext.request.contextPath}/loginServlet" method="post">
-    <div class="box">
-        <div class="title">欢迎来到商品信息中心</div>
+        <div class="title"><span id="login"><a href="login.jsp" style="text-decoration: none;color: #fe9c4d">登录</a></span> · <span id="register"><a href="register.jsp" style="text-decoration: none;">注册</a></span></div>
         <div class="inbox">
             <table>
                 <tr>
@@ -84,7 +84,6 @@
                     <td colspan="2" class="sub" >免登陆<input type="radio" name="freeLogin" value="yes">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="登录"  id="sublong"></td>
                 </tr>
             </table>
-            <a href="register.jsp" id="register">注册</a>
 
         </div>
     </div>

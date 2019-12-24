@@ -75,7 +75,7 @@
 <form action="${pageContext.request.contextPath}/goodsServlet" method="post">
 
     <table align="center" cellpadding="5px" cellspacing="0" width="90%">
-        <h2 style="color: #3a35f3" align="center">商品信息中心</h2>
+        <h1 style="color: #3a35f3" align="center">商品信息中心</h1>
         <tr>
             <td>欢迎用户 ${username} 登录</td>
             <td>
@@ -134,11 +134,11 @@
     </table>
 
     <p>
-        <a href="goodsServlet?page=0">&nbsp;&nbsp;首页</a>
-        <a href="goodsServlet?page=${page.nowPage-1}">&nbsp;&nbsp;上一页</a>
+        <a href="goodsServlet?page=0" style="text-decoration: none;">&nbsp;&nbsp;首页</a>
+        <a href="goodsServlet?page=${page.nowPage-1}" style="text-decoration: none;">&nbsp;&nbsp;上一页</a>
         第${page.nowPage+1}页/共${page.totlePage}页
-        <a href="goodsServlet?page=${page.nowPage+1}">&nbsp;&nbsp;下一页</a>
-        <a href="goodsServlet?page=${page.totlePage}">&nbsp;&nbsp;首页</a>
+        <a href="goodsServlet?page=${page.nowPage+1}" style="text-decoration: none;">&nbsp;&nbsp;下一页</a>
+        <a href="goodsServlet?page=${page.totlePage}" style="text-decoration: none;">&nbsp;&nbsp;尾页</a>
     </p>
 
 </form>

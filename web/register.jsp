@@ -12,21 +12,19 @@
 
     <style>
         .box_out{
-            width: 40%;
-            height:80%;
+            width: 35%;
+            height: 80%;
             border-radius: 3px;
-            box-shadow: 3px 3px 4px #b9b9b9 ;
-            background: -webkit-linear-gradient(top,#bfbfbf, #dbdbdb, #f5f5f5);
-            border: 1px solid;
+            box-shadow:0px 0px 10px #cecece;
             margin: auto;
-            margin-top:60px;
-            overflow:hidden;
+            margin-top: 60px;
+            overflow: hidden;
         }
 
 
         .box_in{
             width:70%;
-            height:95%;
+            height:90%;
             margin:auto;
         }
 
@@ -58,19 +56,28 @@
             width:200px;
         }
 
+        #login a:hover{
+            text-align: center;
+            color: #fe9c4d;
+        }
+
+        #login a{
+            color: grey;
+        }
+        .title{
+            font-size: 30px;
+        }
+
 
     </style>
 </head>
-<body>
+<body style="background-color: #f3f2ef">
 
-<div class="box_out">
+<div class="box_out" style="background-color: #ffff">
     <form action="${pageContext.request.contextPath}/registerServlet" method="post">
+        <div class="title" align="center"><span id="login"><a href="login.jsp" style="text-decoration: none;">登录</a></span> ·
+            <span id="register"><a href="register.jsp" style="text-decoration: none;color: #fe9c4d">注册</a></span></div>
         <table class="box_in" width="50%" align="center" >
-
-            <tr>
-                <td colspan="2" style="color: lightgrey;" align="center"><h1>注册</h1></td>
-            </tr>
-
             <tr>
                 <td class="text_left">用户名</td>
                 <td class="text_right">
@@ -109,7 +116,7 @@
                     动漫<input type="checkbox" name="hobbys" value="动漫">
                 </td>
             </tr>
-0
+
             <tr>
                 <td class="text_left">邮&nbsp;&nbsp;&nbsp;箱</td>
                 <td class="text_right">
