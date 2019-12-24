@@ -60,7 +60,7 @@ window.opener
             <div class="left"><input type="file" name="upload"><br/></div>
             <div class="left">
                 <input type="submit" value="上传" class="sub">
-                <input type="button" value="返回" class="sub" onclick="history.back();">
+                <input type="button" value="返回" class="sub" onclick="window.close();">
             </div>
         </div>
     </form>

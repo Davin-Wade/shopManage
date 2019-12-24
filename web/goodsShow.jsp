@@ -67,17 +67,13 @@
     }
 </script>
 
-<%
-    HttpSession session1 = request.getSession();
-    String username = (String) session1.getAttribute("username");
-%>
 <body>
 <form action="${pageContext.request.contextPath}/goodsServlet" method="post">
 
     <table align="center" cellpadding="5px" cellspacing="0" width="90%">
         <h1 style="color: #3a35f3" align="center">商品信息中心</h1>
         <tr>
-            <td>欢迎用户 ${username} 登录</td>
+            <td>欢迎用户 ${noFreeUsername} 登录</td>
             <td>
                 商品名称：<input type="text" name="nameSearch" class="search">&nbsp;&nbsp;&nbsp;<%--<a href="goodsServlet?opr=null">--%><input
                     type="submit" value="查询"></a>

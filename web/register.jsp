@@ -12,7 +12,7 @@
 
     <style>
         .box_out{
-            width: 35%;
+            width: 25%;
             height: 80%;
             border-radius: 3px;
             box-shadow:0px 0px 10px #cecece;
@@ -23,7 +23,7 @@
 
 
         .box_in{
-            width:70%;
+            width:90%;
             height:90%;
             margin:auto;
         }
@@ -35,11 +35,11 @@
             font-weight: bold;
             color: rgba(83, 83, 83, 0.56);
             padding-top: 5px;
-            padding-left: 40px;
+            padding-left: 25px;
         }
 
         .text_right{
-            padding-left: 65px;
+            padding-left: 45px;
             padding-top: 5px;
         }
 

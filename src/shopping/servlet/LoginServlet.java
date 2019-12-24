@@ -79,20 +79,19 @@ public class LoginServlet extends HttpServlet {
          */
         PrintWriter out = resp.getWriter();
         if (row > 0) {
+            session.setAttribute("noFreeUsername",use.getUsername());
+
             if(freeLogin != null){
-                session.setAttribute("username",use.getUsername());
-//            out.println("<script type='text/javascript'> alert('登陆成功，将跳转信息页面:');location.href='gd_search.jsp';</script>");
+                Cookie cookie = new Cookie(req.getContextPath()+"username",use.getUsername());
+                cookie.setMaxAge(60*60*24*7);// 七天免登录
+                resp.addCookie(cookie);
                 resp.sendRedirect("goodsServlet");
             }else{
-//                session.setAttribute("noFreeUsername",use.getUsername());
-//                Cookie cookie = new Cookie("noFreeUsername",use.getUsername());
-                req.getRequestDispatcher("goodsServlet").forward(req,resp);
-//                resp.sendRedirect("goodsServlet");
+                resp.sendRedirect("goodsServlet");
             }
         } else {
             out.println("<script type='text/javascript'> alert('登陆失败:" + errMsg + "');location.href='login.jsp';</script>");
         }
-        System.out.println(111);
     }
 
 

@@ -11,37 +11,35 @@
 <head>
     <title>添加信息</title>
     <style>
-        table{
+        table {
             /*border:2px solid darkgray;*/
             border-radius: 3px;
-            box-shadow: 2px 2px 2px darkgray ;
-            background: -webkit-linear-gradient(top,#bfbfbf, #dbdbdb, #ededed);
+            box-shadow: 2px 2px 2px darkgray;
+            background: -webkit-linear-gradient(top, #bfbfbf, #dbdbdb, #ededed);
         }
 
-        .right{
+        .right {
             text-align: center;
         }
 
-        .left{
+        .left {
             text-align: center;
         }
 
-        .sub{
+        .sub {
             text-align: center;
         }
 
-        .fun{
-            width:20%;
+        .fun {
+            width: 20%;
             font-size: 18px;
         }
     </style>
 </head>
 <body>
 
-<%--<form action="goodsServlet" method="post">--%>
 <form action="${pageContext.request.contextPath}/goodsServlet?opr=add" method="post" enctype="multipart/form-data">
     <script type="application/javascript" src="jsupload/upload.js"></script>
-<%--    <input type="text" value="add" name="opr" style="display: none">--%>
     <table border="1" align="center" width="90%" cellpadding="5" cellspacing="0">
         <tr>
             <td colspan="2" style="color: blue" align="center"><h1>增添商品</h1></td>
@@ -49,40 +47,41 @@
         <tr>
             <td class="left">商品名称</td>
             <td class="right">
-                <input type="text" name="names" />
+                <input type="text" name="names"/>
             </td>
         </tr>
         <tr>
             <td class="left">商品照片</td>
             <td class="right">
-<%--                <img src="" id="picImg" alt="无法显示" width="100px" height="100px">--%>
-<%--                <input type="hidden" name="pic" id="pic">--%>
-<%--                <input type="button" value="上传" onclick="window.open('upload.jsp')">--%>
-                <input type="file" name="pic" >
+                <input type="file" name="pic">
+
+                <%--                <img src="" id="picImg" name="pic" alt="无法显示" width="100px" height="100px">--%>
+                <%--                <input type="hidden" name="pic" id="pic">--%>
+                <%--                <input type="button" value="上传" onclick="window.open('upload.jsp')">--%>
             </td>
         </tr>
         <tr>
             <td class="left">商品价格</td>
             <td class="right">
-                <input type="text" name="price" />
+                <input type="text" name="price"/>
             </td>
         </tr>
         <tr>
             <td class="left">商品详情</td>
             <td class="right">
-                <input type="text" name="desc" />
+                <input type="text" name="desc"/>
             </td>
         </tr>
         <tr>
             <td class="left">商品库存</td>
             <td class="right">
-                <input type="text" name="stock" />
+                <input type="text" name="stock"/>
             </td>
         </tr>
         <tr>
             <td colspan="2" class="sub">
-                <input type="submit" value="添加"  style="margin-left: 20px" class="fun">
-                <input type="button" value="返回"  onclick="history.back()" style="margin-left: 20px" class="fun">
+                <input type="submit" value="添加" style="margin-left: 20px" class="fun">
+                <input type="button" value="返回" onclick="history.back()" style="margin-left: 20px" class="fun">
             </td>
         </tr>
     </table>
