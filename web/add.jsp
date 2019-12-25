@@ -37,7 +37,11 @@
     </style>
 
     <script>
-
+        function newFIle() {
+            var windowURL = window.URL || window.webkitURL;
+            var loadImg = windowURL.createObjectURL(document.getElementById("uploadImg").files[0]);
+            document.getElementById("Imge").setAttribute("src", loadImg);
+        }
     </script>
 </head>
 <body>

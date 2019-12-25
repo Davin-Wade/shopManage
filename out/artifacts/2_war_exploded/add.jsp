@@ -61,9 +61,6 @@
         <tr>
             <td class="left">商品照片</td>
             <td class="right">
-                <%--                <img src="#" id="Imge">&lt;%&ndash; visibility &ndash;%&gt;--%>
-<%--                <input type="file" name="pic" id="uploadImg" onclick="newFIle()" multiple="true"--%>
-<%--                       class="form-input file-pic">--%>
                 <input type="file" name="pic">
                 <%--                <img src="" id="picImg" name="pic" alt="无法显示" width="100px" height="100px">--%>
                 <%--                <input type="hidden" name="pic" id="pic">--%>

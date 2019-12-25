@@ -44,7 +44,7 @@
         font-size: 18px;
         width: 100px;
         height: 35px;
-        border-radius: 5px;
+        border-radius: 15px;
         background-color: #e3e2dd;
         color: #b1b0ab;
     }
@@ -105,8 +105,8 @@
                     <td colspan="2" class="sub"><span style="font-size: 13px">免登陆</span><input type="radio"
                                                                                                id="freeLogin"
                                                                                                name="freeLogin"
-                                                                                               value="yes"><span
-                            id="SUB"><input type="submit" value="登录" id="sublong"></span></td>
+                                                                                               value="yes">
+                        <span id="SUB"><input type="submit" value="登录" id="sublong" style="outline: none"></span></td>
                 </tr>
             </table>
 
@@ -124,8 +124,6 @@
     };
 
 </script>
-
-
 
 
 </body>

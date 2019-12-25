@@ -18,7 +18,7 @@
     }
 
     .title {
-        color: #af68f3;
+        color: #975acd;
     }
 
     table {
@@ -37,9 +37,56 @@
         height: 15px;
     }
 
+    .page{
+        outline:none;
+        background-color: #dbdbdb;
+        border-radius: 16px;
+        border: 0;
+        font-size: 16px;
+        width: 80px;
+    }
+
+    .page:hover{
+        background-color: #b9b9b9;
+    }
+
     p{
         text-align: center;
+        text-decoration: none;
     }
+
+    .firLine{
+        outline:none;
+        background-color: #bfbfbf;
+        border-radius: 16px;
+        border: 0;
+        font-size: 16px;
+        width: 80px;
+    }
+
+    .firLine:hover{
+        color: #605cf5;
+    }
+
+
+
+    #off{
+        float: right;
+        font-size: 25px;
+        color: #78a0ac;
+        background: -webkit-linear-gradient(top, #bfbfbf, #dbdbdb, #ededed);
+        border-radius: 3px;
+        box-shadow: 3px 3px 4px #b9b9b9;
+        text-decoration:none;
+    }
+    #off:hover{
+        color: #ff675c;
+    }
+
+    tr:hover{
+        background-color: #b3b3b3;
+    }
+
 </style>
 
 <script>
@@ -75,19 +122,18 @@
         <tr>
             <td>欢迎用户 ${noFreeUsername} 登录</td>
             <td>
-                商品名称：<input type="text" name="nameSearch" class="search">&nbsp;&nbsp;&nbsp;<%--<a href="goodsServlet?opr=null">--%><input
-                    type="submit" value="查询"></a>
+                商品名称：<input type="text" name="nameSearch" class="search">&nbsp;&nbsp;&nbsp;<input
+                    type="submit" class="firLine" value="查询" style="outline: none"></a>
             </td>
             <td align="right">
-                <a href="add.jsp"><input type="button" value="添加"></a>
-                <a href="javascript:void(0);" onclick="remove()"><input type="button" onclick="confirm('确定删除吗')"
+                <a href="add.jsp"><input type="button" class="firLine" value="添加"></a>
+                <a href="javascript:void(0);" onclick="remove()"><input type="button" class="firLine" onclick="confirm('确定删除吗')"
                                                                         value="批量删除"></a>
             </td>
             <td></td>
             <td></td>
             <td>
-                <a href="loginOffServlet" style="float: right;font-size: 25px;color: #b9b9b9;background: -webkit-linear-gradient(top, #bfbfbf, #dbdbdb, #ededed);border-radius: 3px;
-            box-shadow: 3px 3px 4px #b9b9b9;" id="off">
+                <a href="loginOffServlet" id="off">
                     退出用户
                 </a>
             </td>
@@ -97,7 +143,6 @@
 <form action="goodsServlet?opr=del" method="post" id="go">
 
     <table border="2px" align="center" cellpadding="3px" cellspacing="0" width="90%">
-        <%--        <input type="hidden" name="opr" value="del">--%>
         <tr>
             <th><input type="checkbox" id="checkAll" name="checkall" onclick="checkAllSelect()"/></th>
             <th class="title" style="display: none">ID:</th>
@@ -130,11 +175,11 @@
     </table>
 
     <p>
-        <a href="goodsServlet?page=0" style="text-decoration: none;">&nbsp;&nbsp;首页</a>
-        <a href="goodsServlet?page=${page.nowPage-1}" style="text-decoration: none;">&nbsp;&nbsp;上一页</a>
+        <a href="goodsServlet?page=0" ><input type="button" class="page" value="首  页"></a>
+        <a href="goodsServlet?page=${page.nowPage-1}" ><input type="button" class="page" value="上 一 页" ></a>
         第${page.nowPage+1}页/共${page.totlePage}页
-        <a href="goodsServlet?page=${page.nowPage+1}" style="text-decoration: none;">&nbsp;&nbsp;下一页</a>
-        <a href="goodsServlet?page=${page.totlePage}" style="text-decoration: none;">&nbsp;&nbsp;尾页</a>
+        <a href="goodsServlet?page=${page.nowPage+1}" ><input type="button" class="page" value="下 一 页" ></a>
+        <a href="goodsServlet?page=${page.totlePage}" ><input type="button" class="page" value="尾  页" ></a>
     </p>
 
 </form>
