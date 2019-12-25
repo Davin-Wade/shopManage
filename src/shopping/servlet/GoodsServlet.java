@@ -219,11 +219,15 @@ public class GoodsServlet extends HttpServlet {
                             }
                         } else {
                             if (item.getName() != null && !"".equals(item.getName())) {
-                                String parentPath = req.getServletContext().getRealPath("/upload");
-                                File parentFile = new File(parentPath);
-                                if (!parentFile.exists()) parentFile.mkdirs();
+                                // 获取上传路径
+                                String uploadPath = req.getServletContext().getRealPath("/upload");
+                                // 实例化上传文件
+                                File uploadFile = new File(uploadPath);
+                                // 判断文件是否存在，不存在则创建
+                                if (!uploadFile.exists()) uploadFile.mkdirs();
 
-                                File newFile = new File(parentFile, item.getName());
+                                // 创建以item.getName()为名字的新文件
+                                File newFile = new File(uploadFile, item.getName());
                                 InputStream inputStream = item.getInputStream();
                                 OutputStream outputStream = new FileOutputStream(newFile);
                                 IOUtils.copy(inputStream, outputStream);

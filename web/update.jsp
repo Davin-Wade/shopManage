@@ -57,7 +57,7 @@
                     <td class="left">商品照片路径</td>
                     <td class="right">
                         <img src="${gd[0].pic}" id="picImg" name="pic" alt="无法显示" width="100px" height="100px">
-                        <input type="hidden" name="pic" id="pic">
+                        <input type="hidden" name="pic" id="pic" value="${gd[0].pic}">
                         <input type="button" value="上传" onclick="window.open('upload.jsp')">
                     </td>
                 </tr>

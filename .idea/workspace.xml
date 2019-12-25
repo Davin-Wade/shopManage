@@ -7,29 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8f2c0c3-3683-4879-889f-17b3796f37e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/filter/LoginFilterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/filter/LoginFilterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shopping/filter/LoginFilterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/upload/1000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/upload/57e03cb7e7677d1306907a06796de581.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/upload/scarlett_johansson-004.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/LoginFilterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/LoginOffServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/LoginOffServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/Utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/Utils/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/GoodsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/GoodsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/WEB-INF/classes/shopping/servlet/RegisterServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/goodsShow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/goodsShow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/upload.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/LoginFilterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/LoginOffServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/LoginOffServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shopping/servlet/LoginFilterServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shopping/servlet/LoginOffServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shopping/servlet/LoginOffServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shopping/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shopping/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/2_war_exploded/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/2_war_exploded/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/Utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/Utils/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/GoodsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/GoodsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/一阶段项目2/shopping/servlet/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shopping/Utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shopping/Utils/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shopping/servlet/GoodsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shopping/servlet/GoodsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shopping/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shopping/servlet/RegisterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/goodsShow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/goodsShow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/upload.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/update.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+            <state relative-caret-position="212">
+              <caret line="60" selection-start-line="60" selection-end-line="62" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -58,33 +52,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shopping/servlet/GoodsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="220" column="28" lean-forward="true" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
+            <state relative-caret-position="288">
+              <caret line="162" column="18" lean-forward="true" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#update#0;class#GoodsServlet#0" />
-                <element signature="method#getGoods#0;class#GoodsServlet#0" />
                 <element signature="method#list#0;class#GoodsServlet#0" />
                 <element signature="method#del#0;class#GoodsServlet#0" />
+                <element signature="method#add#0;class#GoodsServlet#0" />
+                <element signature="e#6434#8384#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/update.jsp">
+        <entry file="file://$PROJECT_DIR$/src/shopping/Dao/GoodsDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsupload/upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="64" />
+            <state relative-caret-position="216">
+              <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#updateGoods#0;class#GoodsDaoImpl#0" />
+                <element signature="method#insertGoods#0;class#GoodsDaoImpl#0" />
+                <element signature="method#deleteGoods#0;class#GoodsDaoImpl#0" />
+                <element signature="method#selectGoods#0;class#GoodsDaoImpl#0" />
+                <element signature="method#pageList#0;class#GoodsDaoImpl#0" />
+                <element signature="method#getPageObject#0;class#GoodsDaoImpl#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/shopping/entity/Goods2.java" />
         <option value="$PROJECT_DIR$/src/shopping/entity/User.java" />
         <option value="$PROJECT_DIR$/src/shopping/Dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/shopping/Utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/web/a.html" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/shopping/Dao/UserDaoImpl.java" />
@@ -130,11 +124,8 @@
         <option value="$PROJECT_DIR$/src/shopping/Dao/GoodsDao.java" />
         <option value="$PROJECT_DIR$/src/shopping/servlet/UpLoadingServlet.java" />
         <option value="$PROJECT_DIR$/src/shopping/servlet/UpLoadServlet.java" />
-        <option value="$PROJECT_DIR$/src/shopping/servlet/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/web/1.html" />
-        <option value="$PROJECT_DIR$/src/shopping/Dao/GoodsDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/shopping/entity/Page.java" />
-        <option value="$PROJECT_DIR$/src/shopping/servlet/GoodsServlet.java" />
         <option value="$PROJECT_DIR$/src/shopping/servlet/CheckCodeServlet.java" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/src/shopping/servlet/LoginFilterServlet.java" />
@@ -143,7 +134,11 @@
         <option value="$PROJECT_DIR$/src/shopping/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/web/goodsShow.jsp" />
         <option value="$PROJECT_DIR$/web/upload.jsp" />
+        <option value="$PROJECT_DIR$/src/shopping/Dao/GoodsDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/update.jsp" />
+        <option value="$PROJECT_DIR$/src/shopping/servlet/GoodsServlet.java" />
+        <option value="$PROJECT_DIR$/src/shopping/servlet/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/src/shopping/Utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/web/add.jsp" />
       </list>
     </option>
@@ -156,10 +151,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="185" />
-    <option name="y" value="4" />
+    <option name="x" value="532" />
     <option name="width" value="1315" />
-    <option name="height" value="1002" />
+    <option name="height" value="1061" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -167,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -202,7 +197,7 @@
               <item name="一阶段项目2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="一阶段项目2" type="b2602c69:ProjectViewProjectNode" />
@@ -229,7 +224,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +231,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -411,7 +405,8 @@
       <workItem from="1576889120133" duration="30907000" />
       <workItem from="1576997143003" duration="1265000" />
       <workItem from="1577061812839" duration="15573000" />
-      <workItem from="1577148228439" duration="21924000" />
+      <workItem from="1577148228439" duration="24788000" />
+      <workItem from="1577243246409" duration="4692000" />
     </task>
     <task id="LOCAL-00001" summary="商品信息系统&#10;完成分页，批量删除，免登录功能">
       <created>1577099269137</created>
@@ -448,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577172191179</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="商品信息系统&#10;完成分页，批量删除，免登录功能">
+      <created>1577192593113</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577192593113</updated>
+    </task>
+    <task id="LOCAL-00007" summary="商品信息系统&#10;完成分页，批量删除，免登录功能">
+      <created>1577192817243</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577192817243</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -484,12 +493,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89585000" />
+    <option name="totallyTimeSpent" value="97141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49454546" visible="true" weight="0.14270386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49454546" visible="true" weight="0.1443133" />
       <window_info id="Structure" order="1" sideWeight="0.5008696" side_tool="true" weight="0.11158799" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -500,7 +509,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880098" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.50641775" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35822636" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.23453909" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -575,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shopping/Utils/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/a.html" />
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -634,31 +636,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/1.html" />
-    <entry file="file://$PROJECT_DIR$/src/shopping/servlet/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shopping/Dao/GoodsDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="86" column="5" selection-start-line="61" selection-start-column="4" selection-end-line="86" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateGoods#0;class#GoodsDaoImpl#0" />
-            <element signature="method#insertGoods#0;class#GoodsDaoImpl#0" />
-            <element signature="method#selectGoods#0;class#GoodsDaoImpl#0" />
-            <element signature="method#pageList#0;class#GoodsDaoImpl#0" />
-            <element signature="method#getPageObject#0;class#GoodsDaoImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shopping/entity/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -673,13 +650,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shopping/servlet/UpLoadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -708,9 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jquery-3.4.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery-3.4.1.min.js" />
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -723,19 +691,6 @@
             <element signature="n#style#0;n#a#0;n#span#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#2;n#table#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#td#0;n#tr#3;n#table#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,16 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shopping/filter/LoginFilterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/upload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -797,16 +742,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shopping/servlet/GoodsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/shopping/servlet/UpLoadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="220" column="28" lean-forward="true" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
+        <state relative-caret-position="-54">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shopping/filter/LoginFilterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#update#0;class#GoodsServlet#0" />
-            <element signature="method#getGoods#0;class#GoodsServlet#0" />
-            <element signature="method#list#0;class#GoodsServlet#0" />
-            <element signature="method#del#0;class#GoodsServlet#0" />
           </folding>
         </state>
       </provider>
@@ -820,15 +768,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
+        <state relative-caret-position="81">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="274" column="28" selection-start-line="274" selection-start-column="28" selection-end-line="274" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shopping/servlet/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="76" column="64" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shopping/servlet/GoodsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="162" column="18" lean-forward="true" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#update#0;class#GoodsServlet#0" />
+            <element signature="method#list#0;class#GoodsServlet#0" />
+            <element signature="method#del#0;class#GoodsServlet#0" />
+            <element signature="method#add#0;class#GoodsServlet#0" />
+            <element signature="e#6434#8384#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shopping/Utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shopping/Dao/GoodsDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateGoods#0;class#GoodsDaoImpl#0" />
+            <element signature="method#insertGoods#0;class#GoodsDaoImpl#0" />
+            <element signature="method#deleteGoods#0;class#GoodsDaoImpl#0" />
+            <element signature="method#selectGoods#0;class#GoodsDaoImpl#0" />
+            <element signature="method#pageList#0;class#GoodsDaoImpl#0" />
+            <element signature="method#getPageObject#0;class#GoodsDaoImpl#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        <state relative-caret-position="212">
+          <caret line="60" selection-start-line="60" selection-end-line="62" selection-end-column="108" />
         </state>
       </provider>
     </entry>

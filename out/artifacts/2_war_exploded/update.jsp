@@ -32,9 +32,9 @@
 </head>
 <body>
 
-<form action="${pageContext.request.contextPath}/goodsServlet" method="post">
+<form action="${pageContext.request.contextPath}/goodsServlet?opr=update" method="post">
     <script type="application/javascript" src="jsupload/upload.js"></script>
-    <input type="hidden" value="update" name="opr">
+<%--    <input type="hidden" value="update" name="opr">--%>
     <table border="1" align="center" width="90%" cellpadding="5" cellspacing="0">
 
         <tr>
@@ -57,7 +57,7 @@
                     <td class="left">商品照片路径</td>
                     <td class="right">
                         <img src="${gd[0].pic}" id="picImg" name="pic" alt="无法显示" width="100px" height="100px">
-                        <input type="hidden" name="pic" id="pic">
+                        <input type="hidden" name="pic" id="pic" value="${gd[0].pic}">
                         <input type="button" value="上传" onclick="window.open('upload.jsp')">
                     </td>
                 </tr>

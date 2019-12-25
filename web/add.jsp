@@ -35,6 +35,10 @@
             font-size: 18px;
         }
     </style>
+
+    <script>
+
+    </script>
 </head>
 <body>
 
@@ -54,7 +58,6 @@
             <td class="left">商品照片</td>
             <td class="right">
                 <input type="file" name="pic">
-
                 <%--                <img src="" id="picImg" name="pic" alt="无法显示" width="100px" height="100px">--%>
                 <%--                <input type="hidden" name="pic" id="pic">--%>
                 <%--                <input type="button" value="上传" onclick="window.open('upload.jsp')">--%>

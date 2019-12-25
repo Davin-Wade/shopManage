@@ -1,10 +1,21 @@
 package shopping.Utils;
 
 public class StringUtil {
+    /**
+     *  判断字符串是否为空
+     * @param stu
+     * @return
+     */
     public static boolean isNotNull(String stu){
         return stu != null && !"".equals(stu);
     }
 
+    /**
+     *  将字符串转成Integer
+     * @param stuNo
+     * @param defValue
+     * @return
+     */
     public static Integer String2int(String stuNo,Integer defValue){
         if(isNotNull(stuNo)){
             return Integer.parseInt(stuNo);
