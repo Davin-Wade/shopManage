@@ -35,6 +35,7 @@ public class LoginFilterServlet implements Filter {
                     name = c.getName();
                     // 如果找到存入的用户名，就直接跳出循环
                     if (name.equals(request.getContextPath() + "username")) {
+                        req.setAttribute("noFreeUsername",c.getValue());
                         break;
                     }
                 }
