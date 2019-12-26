@@ -26,14 +26,14 @@ public class LoginFilterServlet implements Filter {
             chain.doFilter(req, resp);
 
         } else {
-            // 判断登录页面是否能通过
+            // 判断是否有存入的用户名来判断能否免登录
             String noFreeUsername = (String) session.getAttribute("noFreeUsername");
             String name = null;
             Cookie[] cookies = request.getCookies();
             if (cookies != null) {
                 for (Cookie c : cookies) {
                     name = c.getName();
-                    // 免登录时
+                    // 如果找到存入的用户名，就直接跳出循环
                     if (name.equals(request.getContextPath() + "username")) {
                         break;
                     }

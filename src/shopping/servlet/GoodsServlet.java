@@ -109,6 +109,7 @@ public class GoodsServlet extends HttpServlet {
     private void list(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         Goods gd = new Goods();
         gd.setName(req.getParameter("nameSearch"));
+        req.setAttribute("nameSearch",gd.getName());
 
         // 获取分页信息
         Page pg = new Page();
@@ -116,7 +117,7 @@ public class GoodsServlet extends HttpServlet {
 
         GoodsDaoImpl gdDao = new GoodsDaoImpl();
         Page page = gdDao.getPageObject(gd, pg);
-        List<Object> list = gdDao.pageList(gd,page);
+        List<Object> list = gdDao.pageList(gd,page) ;
         if (list != null && list.size() > 0) {
             req.setAttribute("list", list);
             req.setAttribute("page",page);

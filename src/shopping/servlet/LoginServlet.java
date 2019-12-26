@@ -43,7 +43,6 @@ public class LoginServlet extends HttpServlet {
         use.setUsername(req.getParameter("username"));
         use.setPassword(req.getParameter("password"));
         String code = req.getParameter("checkCode");
-        String freeLogin = req.getParameter("freeLogin");
 
         HttpSession session = req.getSession();
         String checkCode_session = (String)session.getAttribute("checkCode_session");
@@ -74,23 +73,27 @@ public class LoginServlet extends HttpServlet {
         }
 
 
-        /**
-         * 登录判断数据是否合法
-         */
-        PrintWriter out = resp.getWriter();
-        if (row > 0) {
-            session.setAttribute("noFreeUsername",use.getUsername());
 
+        PrintWriter out = resp.getWriter();
+        // 登录判断数据是否合法
+        if (row > 0) {
+            String freeLogin = req.getParameter("freeLogin");// 获取是否免登录
+            String remUser = req.getParameter("remember");// 获取是否记住密码
+            session.setAttribute("noFreeUsername",use.getUsername());
             if(freeLogin != null){
                 Cookie cookie = new Cookie(req.getContextPath()+"username",use.getUsername());
                 cookie.setMaxAge(60*60*24*7);// 七天免登录
                 resp.addCookie(cookie);
-                resp.sendRedirect("goodsServlet");
-            }else{
-                resp.sendRedirect("goodsServlet");
             }
+//            if(remUser != null){
+//                Cookie cookie = new Cookie("pass",use.getPassword());
+//                Cookie cookie1 = new Cookie("user",use.getUsername());
+//                cookie.setMaxAge(60*60*24*7);//
+//                session.setAttribute("noFreePwd",use.getPassword());
+//            }
+            resp.sendRedirect("goodsServlet");
         } else {
-            out.println("<script type='text/javascript'> alert('登陆失败:" + errMsg + "');location.href='login.jsp';</script>");
+            out.println("<script type='text/javascript'> alert('登陆失败:" + errMsg + "');history.back();</script>");
         }
     }
 

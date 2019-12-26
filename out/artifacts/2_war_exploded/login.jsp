@@ -73,9 +73,11 @@
     }
 
     #SUB {
-        padding-left: 30px;
+        padding-left: 5px;
     }
 </style>
+
+
 
 <body style="background-color: #f3f2ef">
 <div class="box" style="background-color: #ffffff">
@@ -88,12 +90,12 @@
                 <tr>
                     <td class="u_left">用户名：</td>
                     <td class="u_right" colspan="2"><input type="text" class="text" name="username" id="username"
-                                                           placeholder="请输入用户名"></td>
+                                                           value="${noFreeUsername}" placeholder="请输入账号"></td>
                 </tr>
                 <tr>
                     <td class="u_left">密&nbsp;&nbsp;&nbsp;码：</td>
                     <td class="u_right" colspan="2"><input type="password" class="text" name="password" id="password"
-                                                           placeholder="请输入密码"></td>
+                                                           placeholder="请输入密码" value="${noFreePwd}"></td>
                 </tr>
                 <tr>
                     <td class="u_left">验证码：</td>
@@ -102,11 +104,11 @@
                     <td style="padding-top: 15px"><img src="checkCodeServlet" id="Imge" height="40px"></td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="sub"><span style="font-size: 13px">免登陆</span><input type="radio"
-                                                                                               id="freeLogin"
-                                                                                               name="freeLogin"
-                                                                                               value="yes">
-                        <span id="SUB"><input type="submit" value="登录" id="sublong" style="outline: none"></span></td>
+                    <td colspan="2" class="sub">
+                        <span style="font-size: 13px"><label>免登陆<input type="checkbox" id="freeLogin" checked name="freeLogin"></label></span>
+<%--                        <span style="font-size: 13px"><label>记住密码<input type="checkbox" id="remember" checked name="remember"></label></span>--%>
+                        <span id="SUB"><input type="submit" value="登录" id="sublong" style="outline: none"></span>
+                    </td>
                 </tr>
             </table>
 
@@ -122,6 +124,11 @@
             this.src = "checkCodeServlet?" + Math.random();
         }
     };
+
+    function foc(){
+        document.getElementById("username").focus();
+    }
+
 
 </script>
 

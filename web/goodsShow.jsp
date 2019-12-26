@@ -115,14 +115,14 @@
 </script>
 
 <body>
-<form action="${pageContext.request.contextPath}/goodsServlet" method="post">
+<form action="${pageContext.request.contextPath}/goodsServlet" method="post" id="form">
 
     <table align="center" cellpadding="5px" cellspacing="0" width="90%">
         <h1 style="color: #3a35f3" align="center">商品信息中心</h1>
         <tr>
             <td>欢迎用户 ${noFreeUsername} 登录</td>
             <td>
-                商品名称：<input type="text" name="nameSearch" class="search">&nbsp;&nbsp;&nbsp;<input
+                商品名称：<input type="text" name="nameSearch" class="search" >&nbsp;&nbsp;&nbsp;<input
                     type="submit" class="firLine" value="查询" style="outline: none"></a>
             </td>
             <td align="right">
@@ -173,15 +173,15 @@
             </c:forEach>
         </c:if>
     </table>
-
-    <p>
-        <a href="goodsServlet?page=0" ><input type="button" class="page" value="首  页"></a>
-        <a href="goodsServlet?page=${page.nowPage-1}" ><input type="button" class="page" value="上 一 页" ></a>
-        第${page.nowPage+1}页/共${page.totlePage}页
-        <a href="goodsServlet?page=${page.nowPage+1}" ><input type="button" class="page" value="下 一 页" ></a>
-        <a href="goodsServlet?page=${page.totlePage}" ><input type="button" class="page" value="尾  页" ></a>
-    </p>
-
+</form>
+<form action="goodsServlet" method="post">
+<p>
+    <a href="goodsServlet?page=0" ><input type="button" class="page" value="首  页"></a>
+    <a href="goodsServlet?nameSearch=${nameSearch}&page=${page.nowPage-1}" ><input type="button" class="page" value="上 一 页" ></a>
+    第<input type="text" name="page" value="${page.nowPage+1}" style="width: 20px;text-align: center"> 页/共${page.totlePage}页
+    <a href="goodsServlet?nameSearch=${nameSearch}&page=${page.nowPage+1}" ><input type="button" class="page" value="下 一 页" ></a>
+    <a href="goodsServlet?page=${page.totlePage}" ><input type="button" class="page" value="尾  页" ></a>
+</p>
 </form>
 </body>
 </html>

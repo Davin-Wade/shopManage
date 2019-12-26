@@ -38,7 +38,7 @@ public class CheckCodeServlet extends HttpServlet {
         // 7.生成随机数为验证码
         for (int i = 0;i < 4;i++){
             // 7.1 生成随机数
-            char code = codeAll.charAt((int)ran.nextInt(62));
+            char code = codeAll.charAt(ran.nextInt(62));
             // 7.2 把随机数添加到图片中
             graphics.drawString(code+"",20+20*i,30);
             sb.append(code);

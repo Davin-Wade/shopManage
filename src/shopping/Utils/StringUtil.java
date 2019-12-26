@@ -19,6 +19,7 @@ public class StringUtil {
     public static Integer String2int(String stuNo,Integer defValue){
         if(isNotNull(stuNo)){
             return Integer.parseInt(stuNo);
+
         }
         return defValue;
     }

@@ -151,9 +151,11 @@ public class GoodsDaoImpl implements GoodsDao {
         List<Object> pageList = new ArrayList<>();
         getPageObject(gd, getPageObject(gd,pg));
 
-        for(int i = (pg.getNowPage() * pg.getDateSize());i < (pg.getNowPage()+1)*pg.getDateSize() && i < selectGoods(gd).size();i++){
-            // 将当前页面的数据传给pageList
-            pageList.add(selectGoods(gd).get(i));// selectStu是查询出来的所有数据，用get(i)方式来获取第i条数据
+        if(selectGoods(gd) != null && selectGoods(gd).size() > 0) {
+            for (int i = (pg.getNowPage() * pg.getDateSize()); i < (pg.getNowPage() + 1) * pg.getDateSize() && i < selectGoods(gd).size(); i++) {
+                // 将当前页面的数据传给pageList
+                pageList.add(selectGoods(gd).get(i));// selectStu是查询出来的所有数据，用get(i)方式来获取第i条数据
+            }
         }
         return pageList;
     }
