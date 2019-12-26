@@ -54,7 +54,7 @@ public class GoodsServlet extends HttpServlet {
             gd.setId(StringUtil.String2int(req.getParameter("ids"), 0));
             gd.setName(req.getParameter("names"));
             gd.setPic(req.getParameter("pic"));
-            gd.setPrice(StringUtil.String2int(req.getParameter("price"), 0));
+            gd.setPrice(StringUtil.String2Db(req.getParameter("price"),0.0));
             gd.setDesc(req.getParameter("desc"));
             gd.setStock(StringUtil.String2int(req.getParameter("stock"), 0));
 
@@ -195,7 +195,7 @@ public class GoodsServlet extends HttpServlet {
                             }
                             if ("price".equals(item.getFieldName())) {
                                 String price = item.getString();
-                                gd.setPrice(StringUtil.String2int(price, 0));
+                                gd.setPrice(StringUtil.String2Db(price, 0.0));
                                 if (gd.getPrice() <= 0) {
                                     out.println("<script>alert('商品价格不能为空');history.back();</script>");
                                     return;

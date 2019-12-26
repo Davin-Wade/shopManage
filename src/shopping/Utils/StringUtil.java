@@ -25,6 +25,21 @@ public class StringUtil {
     }
 
     /**
+     * 将字符串转成Double
+     * @param stuNo
+     * @param defValue
+     * @return
+     */
+    public static Double String2Db(String stuNo,Double defValue){
+        if(isNotNull(stuNo)){
+            return Double.parseDouble(stuNo);
+
+        }
+        return defValue;
+    }
+
+
+    /**
      *      用于字符串数组转换成字符串，不带中括号
      * @param arr
      * @return
@@ -42,6 +57,7 @@ public class StringUtil {
         }
         return null;
     }
+
 
     /**
      *     将字符串转换成int数组

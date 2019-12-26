@@ -128,7 +128,7 @@ public class GoodsDaoImpl implements GoodsDao {
                 gdList.setId(rs.getInt("g_id"));
                 gdList.setName(rs.getString("g_goods_name"));
                 gdList.setPic(rs.getString("g_goods_pic"));
-                gdList.setPrice(rs.getInt("g_goods_price"));
+                gdList.setPrice(rs.getDouble("g_goods_price"));
                 gdList.setDesc(rs.getString("g_goods_description"));
                 gdList.setStock(rs.getInt("g_goods_stock"));
                 gdList.setIsDel(rs.getInt("is_delete"));

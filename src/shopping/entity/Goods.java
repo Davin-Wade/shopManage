@@ -19,7 +19,7 @@ import java.util.Arrays;
 public class Goods {
     private String name;
     private String pic;
-    private int price;
+    private double price;
     private String desc;
     private int stock;
     private int isDel;
@@ -56,11 +56,11 @@ public class Goods {
         this.pic = pic;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -107,7 +107,7 @@ public class Goods {
     public Goods() {
     }
 
-    public Goods(String name, String pic, int price, String desc, int stock, int isDel, int id, int[] idAll) {
+    public Goods(String name, String pic, double price, String desc, int stock, int isDel, int id, int[] idAll) {
         this.name = name;
         this.pic = pic;
         this.price = price;
