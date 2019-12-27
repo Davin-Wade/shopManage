@@ -76,7 +76,8 @@
         <tr>
             <td class="left">商品详情</td>
             <td class="right">
-                <input type="text" name="desc"/>
+<%--                <input type="text" name="desc"/>--%>
+                <textarea cols="20" rows="7" name="desc"></textarea>
             </td>
         </tr>
         <tr>

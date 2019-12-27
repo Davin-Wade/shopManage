@@ -70,7 +70,8 @@
                 <tr>
                     <td class="left">商品详情</td>
                     <td class="right">
-                        <input type="text" name="desc" value="${gd[0].desc}"/>
+                        <textarea cols="20" rows="7" name="desc">${gd[0].desc}</textarea>
+<%--                        <input type="text" name="desc" value="${gd[0].desc}"/>--%>
                     </td>
                 </tr>
                 <tr>

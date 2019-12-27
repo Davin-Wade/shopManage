@@ -54,7 +54,7 @@ public class GoodsServlet extends HttpServlet {
             gd.setId(StringUtil.String2int(req.getParameter("ids"), 0));
             gd.setName(req.getParameter("names"));
             gd.setPic(req.getParameter("pic"));
-            gd.setPrice(StringUtil.String2Db(req.getParameter("price"),0.0));
+            gd.setPrice(StringUtil.String2Db(req.getParameter("price"),0));
             gd.setDesc(req.getParameter("desc"));
             gd.setStock(StringUtil.String2int(req.getParameter("stock"), 0));
 
@@ -62,17 +62,17 @@ public class GoodsServlet extends HttpServlet {
             if (!StringUtil.isNotNull(gd.getName())) {
                 throw new RuntimeException("商品名称不能为空");
             }
-//            if (!StringUtil.isNotNull(gd.getPic())) {
-//                throw new RuntimeException("商品照片不能为空");
-//            }
+            if (!StringUtil.isNotNull(gd.getPic())) {
+                throw new RuntimeException("商品照片不能为空");
+            }
             if (gd.getPrice() <= 0) {
-                throw new RuntimeException("商品价格不能为空");
+                throw new RuntimeException("商品价格不合法");
             }
             if (!StringUtil.isNotNull(gd.getDesc())) {
                 throw new RuntimeException("商品描述不能为空");
             }
             if (gd.getStock() <= 0) {
-                throw new RuntimeException("商品库存不能为空");
+                throw new RuntimeException("商品库存不合法");
             }
 
             GoodsDaoImpl gDao = new GoodsDaoImpl();
@@ -195,9 +195,9 @@ public class GoodsServlet extends HttpServlet {
                             }
                             if ("price".equals(item.getFieldName())) {
                                 String price = item.getString();
-                                gd.setPrice(StringUtil.String2Db(price, 0.0));
+                                gd.setPrice(StringUtil.String2Db(price, 0));
                                 if (gd.getPrice() <= 0) {
-                                    out.println("<script>alert('商品价格不能为空');history.back();</script>");
+                                    out.println("<script>alert('商品价格不合法');history.back();</script>");
                                     return;
                                 }
                             }
@@ -214,7 +214,7 @@ public class GoodsServlet extends HttpServlet {
                                 String stock = item.getString();
                                 gd.setStock(StringUtil.String2int(stock, 0));
                                 if (gd.getStock() <= 0) {
-                                    out.println("<script>alert('商品库存不能为空');history.back();</script>");
+                                    out.println("<script>alert('商品库存不合法');history.back();</script>");
                                     return;
                                 }
                             }
@@ -241,6 +241,9 @@ public class GoodsServlet extends HttpServlet {
                                     System.out.println(path1);
                                     gd.setPic(path1);
                                 }
+                            }else{
+                                out.println("<script type='text/javascript'>alert('添加失败:请添加图片');history.back();</script>");
+                                return;
                             }
                         }
                     }
@@ -253,7 +256,6 @@ public class GoodsServlet extends HttpServlet {
                     //修改失败，跳回修改页面
                     out.println("<script type='text/javascript'>alert('添加失败');history.back();</script>");
                 }
-                return;
             }
         } catch (FileUploadException e) {
             e.printStackTrace();

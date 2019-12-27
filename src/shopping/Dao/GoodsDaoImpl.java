@@ -16,6 +16,12 @@ public class GoodsDaoImpl implements GoodsDao {
     PreparedStatement pstmt = null;
     ResultSet rs = null;
 
+
+    /**
+     *  修改商品信息
+     * @param gd
+     * @return
+     */
     @Override
     public int updateGoods(Goods gd) {
         conn = DBUtils.getConn();
@@ -111,6 +117,8 @@ public class GoodsDaoImpl implements GoodsDao {
                 buf.append(" and g_id = ?");
                 stuList.add(gd.getId());
             }
+
+            buf.append(" order by g_id desc");
 
             // 获取SQL执行对象
             pstmt = conn.prepareStatement(buf.toString());

@@ -18,8 +18,11 @@ public class StringUtil {
      */
     public static Integer String2int(String stuNo,Integer defValue){
         if(isNotNull(stuNo)){
-            return Integer.parseInt(stuNo);
-
+            try {
+                return Integer.parseInt(stuNo);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
         }
         return defValue;
     }
@@ -30,12 +33,15 @@ public class StringUtil {
      * @param defValue
      * @return
      */
-    public static Double String2Db(String stuNo,Double defValue){
+    public static Double String2Db(String stuNo,Integer defValue){
         if(isNotNull(stuNo)){
-            return Double.parseDouble(stuNo);
-
+            try {
+                return Double.parseDouble(stuNo);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
         }
-        return defValue;
+        return (double)defValue;
     }
 
 

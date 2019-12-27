@@ -88,7 +88,7 @@
             <tr>
                 <td class="text_left">密&nbsp;&nbsp;&nbsp;码</td>
                 <td class="text_right">
-                    <input type="password" name="password" id="password" placeholder="设置密码" class="texts">
+                    <input type="password" name="password" id="password" onchange="checkPwd()" placeholder="设置至少6位密码" class="texts">
                 </td>
             </tr>
 
@@ -127,7 +127,7 @@
             <tr>
                 <td class="text_left">手&nbsp;&nbsp;&nbsp;机</td>
                 <td class="text_right">
-                    <input type="text" name="phone" class="texts" placeholder="请输入手机">
+                    <input type="text" name="phone" class="texts" id="phone" onchange="checkPhone()" placeholder="请输入手机">
                 </td>
             </tr>
 
@@ -145,7 +145,23 @@
     </form>
 </div>
 
+<script>
+    function checkPhone() {
+        var phone = document.getElementById("phone").value;
+        if(!(/^1[3-9]\d{9}$/).test(phone)){
+            alert("手机号码有误，请重新输入");
+            return false;
+        }
+    }
 
+    function checkPwd() {
+        var pwd = document.getElementById("password").value;
+        if(!(/^[a-zA-Z]\w{5,}$/).test(pwd)){
+            alert("密码需要至少一位首字母");
+            return false
+        }
+    }
+</script>
 
 
 </body>
